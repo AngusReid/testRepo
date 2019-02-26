@@ -1,1 +1,7 @@
-print("This is a test python file")
+def my_function():
+  print("Hello from a function")
+
+my_function()
+
+
+

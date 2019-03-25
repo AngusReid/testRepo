@@ -1,2 +1,12 @@
 tenets:
-  - import: codelingo/effective-go
+  # - import: codelingo/cacophony
+  - name: test-tenet
+    flows:
+      codelingo/review:
+        comment: This tenet is a test.
+    query: |
+      import codelingo/ast/common
+
+      @review comment
+      common.func(depth = any)
+
